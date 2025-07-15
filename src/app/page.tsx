@@ -97,19 +97,24 @@ export default function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section className="home__contact">
-        <h2 className="home__section-title">Contact Us</h2>
-        <p className="home__contact-text">
-          Ready to get started? Call us at{" "}
-          <a href="tel:555-123-4567" className="home__contact-link">
-            (555) 123-4567
-          </a>{" "}
-          or email{" "}
-          <a href="mailto:info@roofing.com" className="home__contact-link">
-            info@roofing.com
-          </a>
-          .
+      <section className="home__contact-banner home__contact-banner--simple">
+        <span className="home__contact-subtitle">Get in Touch</span>
+        <h2 className="home__contact-title">Contact Us Today</h2>
+        <p className="home__contact-message">
+          Ready to start your roofing project or have questions? Our friendly
+          team is here to help you every step of the way.
         </p>
+        <div className="home__contact-info">
+          <a href="tel:555-123-4567" className="home__contact-link">
+            <strong>Call:</strong> (555) 123-4567
+          </a>
+          <a href="mailto:info@roofing.com" className="home__contact-link">
+            <strong>Email:</strong> info@roofing.com
+          </a>
+        </div>
+        <a href="/contact" className="home__contact-cta">
+          Request a Free Quote
+        </a>
       </section>
     </main>
   );
